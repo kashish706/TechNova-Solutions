@@ -1,0 +1,157 @@
+.services-hero-bg .hero-text {
+    color: #ffffff;
+    max-width: 750px;
+    opacity: 0;
+    transform: translateX(-60px);
+    animation: slideFromLeft 1.2s ease forwards;
+}
+.services-hero-bg h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.services-hero-bg p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #e6eef4;
+}
+@keyframes slideFromLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@media (max-width: 768px) {
+    .services-hero-bg {
+        height: auto;
+        min-height: 300px;       
+        padding: 100px 20px;        
+        background-position: center;
+    }
+
+    .services-hero-bg .hero-text {
+        transform: none;
+        animation: fadeUp 1s ease forwards;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .services-hero-bg h1 {
+        font-size: 2rem;        
+    }
+    .services-hero-bg p {
+        font-size: 0.95rem;   
+        line-height: 1.6;
+    }
+}
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.service-card {
+    background: #ffffff;
+    border: 1px solid #dbe7ff;
+    border-radius: 14px;
+    padding: 30px 22px;
+    height: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(13, 110, 253, 0.12);
+    text-align: center;
+    cursor: pointer;
+}
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 32px rgba(13, 110, 253, 0.22);
+}
+.service-card i {
+    font-size: 2.5rem;
+    color: #0d6efd;
+    margin-bottom: 15px;
+}
+.service-card h5 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0a2540;
+    margin-bottom: 10px;
+}
+.service-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+.services-cta {
+    background: linear-gradient(120deg, #f4f8ff, #eef4ff);
+    padding: 70px 0;
+    text-align: center;
+    border-top: 1px solid #dbe7ff;
+}
+.services-cta h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0a2540;
+}
+.services-cta p {
+    max-width: 650px;
+    margin: 15px auto 25px;
+    color: #555;
+}
+.services-cta a {
+    display: inline-block;
+    padding: 12px 32px;
+    background-color: #0d6efd;
+    color: #ffffff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.services-cta a:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-2px);
+}
+@media (max-width: 768px) {
+    .services-banner h1 {
+        font-size: 2.1rem;
+    }
+}
+.modal.fade .modal-dialog {
+    transform: scale(0.9);
+    transition: transform 0.3s ease-out;
+}
+.modal.show .modal-dialog {
+    transform: scale(1);
+}
+.modal-content {
+    border-radius: 18px;
+    border: 1px solid #dbe7ff;
+    box-shadow: 0 15px 40px rgba(13,110,253,0.25);
+}
+.modal-header {
+    background: linear-gradient(120deg, #e3f2fd, #f4f8ff);
+    border-bottom: 1px solid #dbe7ff;
+}
+.modal-title i {
+    color: #0d6efd;
+    margin-right: 8px;
+}
+.modal-body p {
+    color: #555;
+    line-height: 1.7;
+}
+.modal-body ul li {
+    margin-bottom: 6px;
+}
+.service-badge {
+    display: inline-block;
+    background: #e7f1ff;
+    color: #0d6efd;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin: 5px 5px 10px 0;
+}

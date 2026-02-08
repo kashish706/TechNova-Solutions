@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechNova Solutions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/hub.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+        <img src="Image/logo1.png" alt="TechNova Logo" style="height:40px;" ></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="learninghub.html">Learning Hub</a></li>
+              <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+          <form class="d-flex ms-lg-3">
+              <input class="form-control form-control-sm me-2" type="search" placeholder="Search">
+              <button class="btn btn-outline-light btn-sm">Go</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+  <section class="tn-hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 hero-content">
+          <h1 class="hero-title">
+            Start <span>Your Learning</span> Journey<br>Today
+          </h1>
+          <p class="hero-desc">
+            Join a vibrant learning ecosystem and gain real-world
+            skills with expert-led courses, hands-on projects,
+            and career-focused training.
+          </p>
+          <div class="hero-buttons">
+            <a href="#learning-categories" class="btn btn-primary btn-lg">Get Started</a>
+            <a href="#courses" class="btn btn-outline-primary btn-lg">Explore Courses</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <h4>10K+</h4>
+              <p>Students</p>
+            </div>
+            <div>
+              <h4>200+</h4>
+              <p>Instructors</p>
+            </div>
+            <div>
+              <h4>4.9★</h4>
+              <p>Ratings</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-image-wrap">
+          <img src="Image/learninghero.png" alt="Learning Hub" class="hero-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 learning-category" id="learning-categories">
+    <div class="container">
+      <h2 class="fw-bold mb-4 text-center">Learning Categories</h2>
+      <div class="category-slider-wrapper">
+        <div class="category-slider">
+          <div class="category-card text-center">
+            <i class="bi bi-code-slash"></i> <h5>Web Development</h5> <p>Frontend, Backend & Full Stack</p>
+          </div>
+          <div class="category-card text-center">
+            <i class="bi bi-shield-lock"></i> <h5>Cyber Security</h5> <p>Ethical hacking & security</p>
+          </div>
+          <div class="category-card text-center">
+            <i class="bi bi-bar-chart"></i> <h5>Data Science</h5><p>Analytics & visualization</p>
+          </div>
+          <div class="category-card text-center">
+            <i class="bi bi-cloud"></i> <h5>Cloud Computing</h5> <p>AWS, Azure & DevOps</p>
+          </div>
+          <div class="category-card text-center">
+            <i class="bi bi-cpu"></i> <h5>AI / ML</h5> <p>Machine learning & AI</p>
+          </div>
+          <div class="category-card text-center">
+            <i class="bi bi-diagram-3"></i> <h5>DevOps</h5> <p>CI/CD & Kubernetes</p>
+          </div>
+          <div class="category-card text-center">
+            <i class="bi bi-terminal"></i> <h5>Basic Programming</h5> <p>C, C++, Java & Python</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="courses" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Featured Courses</h2>
+      <div  class="row g-4 mb-5">
+        <div class="col-md-6 col-lg-4">
+          <div class="card course-card h-100">
+            <img src="Image/fullshub.png" class="card-img-top" alt="Web Development">
+            <div class="card-body">
+              <h5 class="card-title">Full Stack Web Development</h5>
+              <p class="card-text">HTML, CSS, JavaScript, React & Backend.</p>
+              <a href="#course-fullstack" class="btn btn-primary">View Course</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card course-card h-100">
+            <img src="Image/cyberhub.jpg" class="card-img-top" alt="Cyber Security">
+            <div class="card-body">
+              <h5 class="card-title">Cyber Security Essentials</h5>
+              <p class="card-text">Network security & ethical hacking.</p>
+              <a href="#course-cyber" class="btn btn-primary">View Course</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card course-card h-100">
+            <img src="Image/datahub.jpg" class="card-img-top" alt="Data Science">
+            <div class="card-body">
+              <h5 class="card-title">Data Science & Analytics</h5>
+              <p class="card-text">Python, ML & data visualization.</p>
+              <a href="#course-data" class="btn btn-primary">View Course</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h4 class="fw-bold mb-4 text-center">More Courses</h4>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card course-card h-100">
+            <img src="Image/cloudhub.jpg" class="card-img-top" alt="Cloud Computing">
+            <div class="card-body">
+              <h6 class="card-title">Cloud Computing</h6>
+              <p class="card-text">AWS, Azure & cloud fundamentals.</p>
+              <a href="#" class="btn btn-primary btn-sm">View Course</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card course-card h-100">
+            <img src="Image/aihub.jpg" class="card-img-top" alt="AI ML">
+            <div class="card-body">
+              <h6 class="card-title">AI & Machine Learning</h6>
+              <p class="card-text">ML models, AI concepts & tools.</p>
+              <a href="#" class="btn btn-primary btn-sm">View Course</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card course-card h-100">
+            <img src="Image/devopshub.jpg" class="card-img-top" alt="DevOps">
+            <div class="card-body">
+              <h6 class="card-title">DevOps Engineering</h6>
+              <p class="card-text">CI/CD, Docker & Kubernetes.</p>
+              <a href="#" class="btn btn-primary btn-sm">View Course</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card course-card h-100">
+            <img src="Image/prograhub.png" class="card-img-top" alt="Programming">
+            <div class="card-body">
+              <h6 class="card-title">Basic Programming</h6>
+              <p class="card-text">C, C++, Java & Python basics.</p>
+              <a href="#" class="btn btn-primary btn-sm">View Course</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 course-details">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Course Details & Learning Resources</h2>
+      <div id="course-fullstack"  class="row align-items-center mb-5 g-4">
+        <div class="col-lg-6">
+          <div class="course-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/F4zr1aMevB4?si=4P1wpQlDRKjbn_80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h3>Full Stack Web Development</h3>
+          <div class="course-badges">
+            <span class="badge bg-primary">Duration: 1 Months</span>
+            <span class="badge bg-success">Level: Intermediate</span>
+          </div>
+          <p class="mt-3">
+            Learn frontend and backend development with real-world projects,
+            covering HTML, CSS, JavaScript, React, Node.js, and databases.
+          </p>
+          <h6 class="mt-4">Available On</h6>
+          <div class="platform-links">
+            <a href="https://www.coursera.org" target="_blank">Coursera</a>
+            <a href="https://www.udemy.com" target="_blank">Udemy</a>
+            <a href="https://www.mygreatlearning.com" target="_blank">Great Learning</a>
+          </div>
+        </div>
+      </div>
+      <div id="course-cyber" class="row align-items-center mb-5 g-4 flex-lg-row-reverse">
+        <div class="col-lg-6">
+          <div class="course-video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/z5nc9MDbvkw?si=O2U7DGmVfHgwB7PM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h3>Cyber Security Essentials</h3>
+          <div class="course-badges">
+            <span class="badge bg-primary">Duration: 2 Months</span>
+            <span class="badge bg-warning text-dark">Level: Beginner</span>
+          </div>
+          <p class="mt-3">
+            Understand network security, ethical hacking basics,
+            vulnerabilities, and cyber defense techniques.
+          </p>
+          <h6 class="mt-4">Available On</h6>
+          <div class="platform-links">
+            <a href="https://www.simplilearn.com" target="_blank">Simplilearn</a>
+            <a href="https://www.udemy.com" target="_blank">Udemy</a>
+            <a href="https://www.mygreatlearning.com" target="_blank">Great Learning</a>
+          </div>
+        </div>
+      </div>
+      <div id="course-data"class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <div class="course-video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/5zEt1_Nkiio?si=e66UdERaQRSMxi7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h3>Data Science & Analytics</h3>
+          <div class="course-badges">
+            <span class="badge bg-primary">Duration: 4 Months</span>
+            <span class="badge bg-danger">Level: Advanced</span>
+          </div>
+          <p class="mt-3">
+            Master Python, data analysis, machine learning,
+            and visualization tools with hands-on datasets.
+          </p>
+          <h6 class="mt-4">Available On</h6>
+          <div class="platform-links">
+            <a href="https://www.coursera.org" target="_blank">Coursera</a>
+            <a href="https://www.ibm.com/training" target="_blank">IBM</a>
+            <a href="https://www.udemy.com" target="_blank">Udemy</a>
+            <a href="https://www.mygreatlearning.com" target="_blank">Great Learning</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Why Choose Us</h2>
+      <div class="row text-center">
+        <div class="col-md-3">
+          <h3 class="fw-bold text-primary">10+</h3><p>Industry Courses</p>
+        </div>
+        <div class="col-md-3">
+          <h3 class="fw-bold text-primary">100%</h3><p>Practical Learning</p>
+        </div>
+        <div class="col-md-3">
+          <h3 class="fw-bold text-primary">Expert</h3><p>Mentors</p>
+        </div>
+        <div class="col-md-3">
+          <h3 class="fw-bold text-primary">Career</h3><p>Focused Training</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-section">
+    <div class="container">
+      <div class="footer-cta text-center mb-5">
+          <h3>Ready to Transform Your Business?</h3>
+          <p class="mt-2">Connect with TechNova Solutions to explore innovative technology solutions.</p>
+          <a href="contact.html" class="btn btn-primary mt-3">Contact Us</a>
+      </div>
+      <hr class="footer-divider">
+      <div class="row gy-4">
+          <div class="col-md-4">
+            <h5>TechNova Solutions</h5>
+            <p class="footer-text"> A technology consulting and services company delivering secure, scalable, and innovative solutions for modern enterprises.</p>
+          </div>
+          <div class="col-md-2">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="learninghub.html">Learning Hub</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="clients.html">Clients</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-3">
+                <h6>Contact</h6>
+                <p>Email: info@technovasolutions.com</p>
+                <p>Phone: +91 98765 XXXXX</p>
+                <p>Location: Jalandhar, India</p>
+                <div class="footer-social mt-3">
+                  <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <h6>Our Location</h6>
+                <div class="map-container">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109135.12089818707!2d75.61133674915733!3d31.26302221443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5f68025069f3%3A0xb2a61904d4ab7fc6!2sKhajurla%2C%20Punjab%20144411!5e0!3m2!1sen!2sin!4v1770143640309!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" 
+                  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom text-center mt-4">
+              <div class="footer-legal mb-2">
+                <a href="privacy.html">Privacy Statement</a> <span>|</span>
+                <a href="terms.html">Terms & Conditions</a> <span>|</span>
+                <a href="cookies.html">Cookie Policy / Settings</a> <span>|</span>
+                <a href="accessibility.html">Accessibility Statement</a>
+              </div>
+              <p>© 2026 TechNova Solutions. All rights reserved.</p>
+            </div>
+    </div>
+  </footer>
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', function () {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                navbar.classList.add('navbar-hide');
+            } else {
+                navbar.classList.remove('navbar-hide');
+            }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+    </script>
+</body>
+</html>
