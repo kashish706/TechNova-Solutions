@@ -2,42 +2,299 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome | TechNova</title>
+    <title>TechNova Solutions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/signin.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        @keyframes heroBg{
+            0%{
+                background-image:url('Image/bg1.jpg');
+            }
+            50%{
+                background-image:url('Image/bg2.jpg');
+            }
+            100%{
+                background-image:url('Image/bg1.jpg');
+            }
+        }
+    </style>
 </head>
 <body>
-    <div id="welcomeBox">
-        <h1>Welcome to TechNova Solutions 🚀</h1>
-        <p>Innovate. Build. Grow with Technology</p>
-        <button class="btn btn-light btn-lg mt-4" onclick="showAuth()">Get Started</button>
-    </div>
-    <div class="auth-box" id="authBox">
-        <div id="loginBox">
-            <h3 class="text-center mb-4">Sign In</h3>
-            <input type="email" id="loginEmail" class="form-control mb-3" placeholder="Email">
-            <input type="password" id="loginPassword" class="form-control mb-3" placeholder="Password">
-            <p id="loginError" class="error text-center"></p>
-            <button class="btn btn-primary w-100" onclick="login()">Sign In</button>
-            <p class="text-center mt-3">
-                New user? <span class="toggle" onclick="showRegister()">Create account</span>
-            </p>
-        </div>
-        <div id="registerBox" style="display:none;">
-            <h3 class="text-center mb-4">Create Account</h3>
-            <input type="text" id="name" class="form-control mb-3" placeholder="Full Name">
-            <input type="email" id="email" class="form-control mb-3" placeholder="Email">
-            <input type="password" id="password" class="form-control mb-1" placeholder="Password" onkeyup="checkStrength()">
-            <span id="strength" class="strength"></span>
-            <input type="password" id="confirm" class="form-control mt-3 mb-3" placeholder="Confirm Password">
-            <p id="registerError" class="error text-center"></p>
-            <button class="btn btn-success w-100" onclick="register()">Sign Up</button>
-            <p class="text-center mt-3">
-                Already registered? <span class="toggle" onclick="showLogin()">Sign In</span>
-            </p>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+        <img src="Image/logo1.png" alt="TechNova Logo" style="height:40px;" ></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="learninghub.html">Learning Hub</a></li>
+            <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+        <form class="d-flex ms-lg-3">
+            <input class="form-control form-control-sm me-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-light btn-sm">Go</button>
+        </form>
         </div>
     </div>
-    <script src="register.js"></script>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="fw-bold">Innovating Today. Transforming Tomorrow.</h1>
+                <p class="lead mt-3">TechNova Solutions enables businesses to adapt, innovate, and grow by leveraging modern technologies and industry-aligned expertise.</p>
+                <a href="#services" class="btn btn-primary btn-lg mt-3">Explore Services</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="about-section">
+        <div class="container position-relative">
+            <img src="Image/indewho2.jpg" class="about-img about-img-left" alt="Technology Illustration">
+            <img src="Image/indewho1.jpg" class="about-img about-img-right" alt="Innovation Illustration">
+            <div class="about-card text-center mx-auto">
+                <h2 class="fw-semibold">Who We Are</h2>
+                <p class="mt-4">
+                    We help businesses navigate digital transformation by delivering reliable technology solutions, data-driven insights, and secure digital frameworks aligned with business goals.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section" id = "services">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-semibold">Our Expertise</h2>
+                <p class="text-muted mt-2 ms-lg-3">
+                    Delivering enterprise-grade technology solutions designed to accelerate innovation,
+                    enhance operational efficiency, and drive sustainable business growth.
+                </p>
+            </div>
+            <div class="row g-4 align-items-stretch">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="bi bi-cloud-check"></i>
+                        </div>
+                        <h5>Cloud Transformation</h5>
+                        <p>
+                            We help organizations migrate, modernize, and optimize cloud environments,
+                            ensuring scalability, performance, and cost efficiency across platforms.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="bi bi-bar-chart-line"></i>
+                        </div>
+                        <h5>Data & AI</h5>
+                        <p>
+                            Unlock actionable insights through advanced analytics, AI models, and
+                            intelligent dashboards that support faster and smarter decision-making.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="bi bi-shield-lock"></i>
+                        </div>
+                        <h5>Cybersecurity</h5>
+                        <p>
+                            Strengthen your digital defenses with proactive security strategies,
+                            risk management frameworks, and compliance-driven protection solutions.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                        <h5>Full Stack Development</h5>
+                        <p>
+                            Build robust, scalable web and enterprise applications using modern
+                            frameworks, APIs, and cloud-native architectures.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="services.html" class="services-arrow">
+                    Explore All Services <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses-section">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-semibold">
+                Learning & Skill Development
+            </h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card course-card">
+                        <img src="Image/cloudhub.jpg" loading="lazy" alt="Cloud Computing">
+                        <div class="card-body text-center">
+                            <h5>Cloud Computing</h5>
+                            <p>AWS, Azure fundamentals</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card course-card">
+                        <img src="Image/datahub.jpg" loading="lazy" alt="Data Analytics">
+                        <div class="card-body text-center">
+                            <h5>Data Analytics</h5>
+                            <p>Python, SQL, Power BI</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card course-card">
+                        <img src="Image/cyberhub.jpg"lazy" alt="Cybersecurity">
+                        <div class="card-body text-center">
+                            <h5>Cybersecurity</h5>
+                            <p>Ethical hacking & security</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card course-card">
+                        <img src="Image/fullshub.png" loading="lazy" alt="Web Development">
+                        <div class="card-body text-center">
+                            <h5>Web Development</h5>
+                            <p>Modern full-stack skills</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="learninghub.html" class="services-arrow">View All Courses <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="clients-section bg-light">
+        <div class="container text-center mb-4">
+            <h2 class="mb-4 fw-semibold">Trusted by Leading Organizations</h2>
+        </div>
+        <div class="clients-marquee">
+            <div class="clients-track">
+                <div class="client-logo">
+                    <img src="Image/global bank.png" alt="Global Bank">
+                </div>
+                <div class="client-logo">
+                    <img src="Image/health care.png" alt="Healthcare Group">
+                </div>
+                <div class="client-logo">
+                    <img src="Image/retail.png" alt="Retail Enterprise">
+                </div>
+                <div class="client-logo">
+                    <img src="Image/edtech.png" alt="EdTech Platform">
+                </div>
+                <div class="client-logo">
+                    <img src="Image/global bank.png" alt="Global Bank">
+                </div>
+                <div class="client-logo">
+                    <img src="Image/health care.png" alt="Healthcare Group">
+                </div>
+                <div class="client-logo">
+                    <img src="Image/retail.png" alt="Retail Enterprise">
+                </div>
+                <div class="client-logo">
+                    <img src="Image/edtech.png" alt="EdTech Platform">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta text-center mb-5">
+                <h3>Ready to Transform Your Business?</h3>
+                <p class="mt-2">Connect with TechNova Solutions to explore innovative technology solutions.</p>
+                <a href="contact.html" class="btn btn-primary mt-3">Contact Us</a>
+            </div>
+            <hr class="footer-divider">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <h5>TechNova Solutions</h5>
+                    <p class="footer-text">A technology consulting and services company delivering secure,scalable, and innovative solutions for modern enterprises.</p>
+                </div>
+                <div class="col-md-2">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="learninghub.html">Learning Hub</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="clients.html">Clients</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Contact</h6>
+                    <p>Email: info@technovasolutions.com</p>
+                    <p>Phone: +91 98765 XXXXX</p>
+                    <p>Location: Jalandhar, India</p>
+                    <div class="footer-social mt-3">
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h6>Our Location</h6>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109135.12089818707!2d75.61133674915733!3d31.26302221443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5f68025069f3%3A0xb2a61904d4ab7fc6!2sKhajurla%2C%20Punjab%20144411!5e0!3m2!1sen!2sin!4v1770143640309!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" 
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center mt-4">
+                <div class="footer-legal mb-2">
+                    <a href="privacy.html">Privacy Statement</a>
+                    <span>|</span>
+                    <a href="terms.html">Terms & Conditions</a>
+                    <span>|</span>
+                    <a href="cookies.html">Cookie Policy / Settings</a>
+                    <span>|</span>
+                    <a href="accessibility.html">Accessibility Statement</a>
+                </div>
+                <p>© 2026 TechNova Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', function () {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                navbar.classList.add('navbar-hide');
+            } else {
+                navbar.classList.remove('navbar-hide');
+            }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+    </script>
 </body>
 </html>
+        
